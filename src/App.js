@@ -1,25 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'; 
+import { ReactDOM } from 'react';
+import Entry from "./components/entry"
+import Header from "./components/header"
+import data from "./data"
 
 function App() {
+  const entries = data.map(function(e){
+    return(
+      <Entry 
+        country = {e.id}
+        location = {e.location}
+        img = {e.img}
+        link = {e.link}
+        date = {e.date}
+        description = {e.description}
+      />
+    )
+  })
+
+  const entrys = data.map(item => {
+    return (
+        <Entry
+          country = {item.id}
+          location = {item.location}
+          img = {item.img}
+          link = {item.link}
+          date = {item.date}
+          description = {item.description}
+        />
+    )
+})    
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <section className="entries-list">
+        {entrys}
+      </section>
     </div>
-  );
+  );  
 }
 
 export default App;
