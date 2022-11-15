@@ -9,7 +9,7 @@ function App() {
   const entries = data.map(function(e){
     return(
       <Entry 
-        country = {e.id}
+        country = {e.country}
         location = {e.location}
         img = {e.img}
         link = {e.link}
@@ -22,7 +22,7 @@ function App() {
   const entrys = data.map(item => {
     return (
         <Entry
-          country = {item.id}
+          country = {item.country}
           location = {item.location}
           img = {item.img}
           link = {item.link}
