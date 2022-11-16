@@ -10,7 +10,7 @@ export default[
     {
         country: "australia",
         location: "Sydney Opera House",
-        img: "./assets/sdyoperahouse.png",
+        img: "./assets/sdyoperahouse.png", 
         link: "https://earth.google.com/web/@-33.8567844,151.2152967,7.16622612a,859.55280273d,35y,0h,45t,0r/data=ChAaDgoIL20vMDZfbm0YAiABKAI",
         date: "27 May, 2021 - 8 Jun, 2021",
         description: "The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the banks of the Sydney Harbour, it is often regarded as one of the 20th century's most famous and distinctive buildings."
