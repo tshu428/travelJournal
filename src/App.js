@@ -8,35 +8,26 @@ import data from "./data"
 function App() {
   const entries = data.map(function(e){
     return(
-      <Entry 
+      <div>
+        <Entry 
         country = {e.country}
         location = {e.location}
         img = {e.img}
         link = {e.link}
         date = {e.date}
         description = {e.description}
-      />
-    )
-  })
-
-  const entrys = data.map(item => {
-    return (
-        <Entry
-          country = {item.country}
-          location = {item.location}
-          img = {item.img}
-          link = {item.link}
-          date = {item.date}
-          description = {item.description}
         />
+      <img className="line" src="./assets/line.png"/>
+      </div>
+      
     )
-})    
+  })  
 
   return (
-    <div>
+    <div className="main">
       <Header />
       <section className="entries-list">
-        {entrys}
+        {entries}
       </section>
     </div>
   );  

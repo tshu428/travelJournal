@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +9,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 2px;
+  background-color: #F55A5A;
+  color: #FFFFFF;
+}
+
+.header > img{
+  flex-shrink: 0;
+  margin-right: 4px;
+}
+
+.entries-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.entry{
+  display: flex;
+  padding: 28px 24px;
+  align-items: center;
+}
+
+.entry > img{
+  padding: 10px;
+  margin-right: 12px;
+}
+
+.loci{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #2B283A;
+  position: relative;
+  top: 20px;
+}
+
+.loci > a{
+  margin-left: 10px;
+  color: #918E9B;
+  font-size: 12px;
+}
+
+.container{
+  display: flex;
+}
+
+.info .lociName{
+  color: #2B283A;
+  font-weight: bolder;
+  position: relative;
+  bottom: 20px;
+  font-size: 30px;
+}
+
+.info .date{
+  color: #2B283A;
+  font-weight: bolder;
+  font-size: 12px;
+  position: relative;
+  bottom: 35px;
+}
+
+.info .lociDesc{
+  color: #2B283A;
+  position: relative;
+  bottom: 35px;
+}
+
+.line{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+

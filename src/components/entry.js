@@ -5,17 +5,19 @@ export default function Entry(props){
     return(
         <div className="entry">
             <img src={props.img}/>
-            <div className="container">
-                <div className="loci">
-                    <img src="./assets/geo.png"/>
-                    <p>{props.country.toUpperCase()}</p>
-                    <a href={props.link}>View on Google Maps</a>
+            <div className="info">
+                <div className="maps">
+                    <div className="loci">
+                        <img src="./assets/geo.png"/>
+                        <p>{props.country.toUpperCase()}</p>
+                        <a href={props.link}>View on Google Maps</a>
+                    </div>
                 </div>
-                
-                <h1>{props.location}</h1>
-                <h5>{props.date}</h5>
-                <p>{props.description}</p>
+                <p className="lociName">{props.location}</p>
+                <p className="date">{props.date}</p>
+                <p className="lociDesc">{props.description}</p>
             </div>
+             
         </div>
     )
 }
